@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
-import {postService} from "../../services/postService";
+
+import {postService} from "../../services";
 import {Post1} from "../Post1/Post1";
 
 const Posts1 = () => {

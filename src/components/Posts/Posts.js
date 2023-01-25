@@ -1,18 +1,21 @@
 import {useEffect, useState} from "react";
 
-import {userService} from "../../services/userService";
+import {userService} from "../../services";
 import {Post} from "../Post/Post";
-import {Users} from "../Users/Users";
 
 
-const Posts = () => {
+
+const Posts = ({index}) => {
     const [userPosts, setUserPosts] = useState([]);
 
+    const {id} = index;
+    console.log(id);
+
     useEffect( () => {
-        userService.getPosts(5)
+        userService.getPosts(id)
             .then(value => value.data)
             .then(value => setUserPosts([...value]))
-    },[])
+    },[id])
 
  return (
   <div>

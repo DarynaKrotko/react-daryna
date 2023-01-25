@@ -1,5 +1,7 @@
 const Post1 = ({post, setPostDetails}) => {
+
     const {userId,id,title,body} = post;
+
  return (
   <div>
       <div>userId:{userId}</div>

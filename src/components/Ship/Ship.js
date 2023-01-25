@@ -1,5 +1,6 @@
 const Ship = ({ship}) => {
     const {flight_number, mission_name, launch_year, links:{mission_patch_small}} = ship;
+
  return (
   <div>
       <div>flight_number:{flight_number}</div>
