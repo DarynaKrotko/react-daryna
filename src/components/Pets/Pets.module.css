@@ -1,0 +1,9 @@
+.inputs{
+    display: flex;
+    justify-content: end;
+}
+.components{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
