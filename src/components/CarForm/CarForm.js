@@ -29,7 +29,7 @@ const CarForm = () => {
 
     return (
   <div>
-      <form onClick={handleSubmit(updateCar ? update : create)}>
+      <form onSubmit={handleSubmit(updateCar ? update : create)}>
           <input type="text" placeholder={'brand'} {...register('brand')}/>
           <input type="text" placeholder={'price'} {...register('price')}/>
           <input type="text" placeholder={'year'} {...register('year')}/>
